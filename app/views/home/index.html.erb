@@ -2,9 +2,8 @@
     <% @post.each do |x| %>
     제목: <%=x.title%><br>
     내용: <%=x.content%><br>
-    <a href= '/home/destroy/:id'>삭제</a><br>
-    <a href= '/home/edit/:id'>수정하기</a><br>
-    
-   
--------------------------------------------------------------------<br>
+    <a href= '/home/destroy/<%=x.id%>'>삭제</a><br>
+    <a href= '/home/edit/<%=x.id%>'>수정하기</a><br>
+    <% end %>
+    <br>
 <a href='/home/new'>글쓰러가기</a>
